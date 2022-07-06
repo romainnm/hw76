@@ -1,0 +1,15 @@
+<form [formGroup]="addPersonForm" (ngSubmit)="add()">
+  <div>
+    <label for="id">Id: </label>
+    <input type="id" formControlName="id" />
+  </div>
+  <div>
+    <label for="first-name">First Name: </label>
+    <input type="first-name" formControlName="firstName" />
+  </div>
+  <div>
+    <label for="last-name">Last Name: </label>
+    <input type="last-name" formControlName="lastName" />
+  </div>
+  <button type="submit">Add Person</button>
+</form>
